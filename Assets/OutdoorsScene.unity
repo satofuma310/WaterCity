@@ -419,6 +419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <width>k__BackingField: 50
   <height>k__BackingField: 50
+  <radius>k__BackingField: 0
   <loadingWidth>k__BackingField: 2
   <loadingHeight>k__BackingField: 2
 --- !u!4 &1733763016
@@ -688,6 +689,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawChunk: 1
+  drawRoadSection: 1
+  sectionSphereRadius: 0.5
 --- !u!4 &1957318632
 Transform:
   m_ObjectHideFlags: 0

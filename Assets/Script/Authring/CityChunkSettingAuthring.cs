@@ -7,6 +7,8 @@ public class CityChunkSettingAuthring : MonoBehaviour
     [field: SerializeField]
     public int height { get; private set; }
     [field: SerializeField]
+    public float radius { get; private set; }
+    [field: SerializeField]
     public int loadingWidth { get; private set; }
     [field: SerializeField]
     public int loadingHeight { get; private set; }
@@ -19,6 +21,7 @@ public class CityChunkSettingAuthring : MonoBehaviour
             {
                 width = authoring.width,
                 height = authoring.height,
+                radius = authoring.radius,
                 loadingWidth = authoring.loadingWidth,
                 loadingHeight = authoring.loadingHeight,
             });
