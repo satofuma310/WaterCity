@@ -69,7 +69,7 @@ public partial struct ChunkGenerateSystem : ISystem
                 });
                 //道の分岐点作成
                 var roadSectionBuffer = ecb.AddBuffer<RoadSection>(chunkEntity);
-                var seed = (uint)Util.Encode(x, y);
+                var seed = Util.Encode(x, y);
                 var poissonDiscSampling = new PoissonDiskSampling(setting.width, setting.height, setting.radius, seed);
                 var sectionPositions = poissonDiscSampling.Generate();
                 foreach (var section in sectionPositions)
